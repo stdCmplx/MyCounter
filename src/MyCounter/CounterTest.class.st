@@ -51,7 +51,6 @@ CounterTest >> testInitialize [
 
 { #category : #tests }
 CounterTest >> testStartingAtFive [
-
 	| c |
 	c := Counter startingAt: 5.
 	self assert: c count equals: 5

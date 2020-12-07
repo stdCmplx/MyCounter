@@ -38,12 +38,6 @@ Counter >> increment [
 ]
 
 { #category : #accessing }
-Counter >> increment2 [
-
-	count := count + 2
-]
-
-{ #category : #accessing }
 Counter >> initialize [
 
 	super initialize.
