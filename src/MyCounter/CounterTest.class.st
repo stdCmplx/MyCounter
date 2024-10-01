@@ -1,10 +1,11 @@
 Class {
-	#name : #CounterTest,
-	#superclass : #TestCase,
-	#category : #MyCounter
+	#name : 'CounterTest',
+	#superclass : 'TestCase',
+	#category : 'MyCounter',
+	#package : 'MyCounter'
 }
 
-{ #category : #tests }
+{ #category : 'tests' }
 CounterTest >> testAllMethods [
 
 	| c |
@@ -12,7 +13,7 @@ CounterTest >> testAllMethods [
 	self assert: (c increment; count) equals: 6
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 CounterTest >> testCounterIsSetAndRead [
 
 	| c |
@@ -21,7 +22,7 @@ CounterTest >> testCounterIsSetAndRead [
 	self assert: c count equals: 7
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 CounterTest >> testDecrement [
 
 	| c |
@@ -31,7 +32,7 @@ CounterTest >> testDecrement [
 	self assert: c count equals: 0
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 CounterTest >> testIncrement [
 
 	| c |
@@ -41,7 +42,7 @@ CounterTest >> testIncrement [
 	self assert: c count equals: 4
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 CounterTest >> testInitialize [
 
 	| c |
@@ -49,7 +50,12 @@ CounterTest >> testInitialize [
 	self assert: c count equals: 0
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
+CounterTest >> testSetAndGetCounter [
+	self assert: (Counter new count: 22) count equals: 22
+]
+
+{ #category : 'tests' }
 CounterTest >> testStartingAtFive [
 	| c |
 	c := Counter startingAt: 5.

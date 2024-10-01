@@ -1,1 +1,1 @@
-Package { #name : #MyCounter }
+Package { #name : 'MyCounter' }
